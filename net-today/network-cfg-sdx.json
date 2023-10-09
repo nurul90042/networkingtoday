@@ -1,0 +1,81 @@
+// ip add which assign are from BGPSpeaker to Client
+// mac add are the devices own mac add
+{
+  "ports" : {
+    "of:00000000000000a1/1" : {
+      "interfaces" : [
+        {
+          "name" : "ISP2",
+          "ips"  : [ "10.200.200.1/24" ],
+          "mac"  : "00:00:00:00:00:01"
+        }
+      ]
+    },
+    "of:00000000000000a3/1" : {
+      "interfaces" : [
+        {
+          "name" : "ISP3",
+          "ips"  : [ "10.201.201.1/24" ],
+          "mac"  : "00:00:00:00:00:01"
+        }
+      ]
+    },
+    "of:00000000000000a5/1" : {
+      "interfaces" : [
+        {
+          "name" : "ONOS Controller",
+          "ips"  : [ "10.50.50.1/24" ],
+          "mac"  : "00:00:00:00:00:01"
+        }
+      ]
+    }
+  },
+// ip add which assign are ip add of each client itself
+  "apps" : {
+    "org.onosproject.sdx-l3": {
+      "participants": {
+        "bgpPeers": [
+          {
+            "name": "ISP2",
+            "ip": "10.200.200.2",
+            "connectPoint": "of:00000000000000a1/1",
+            "intfName": "ISP2"
+          },
+          {
+            "name": "ISP3",
+            "ip": "10.201.201.2",
+            "connectPoint": "of:00000000000000a1/1",
+            "intfName": "ISP3"
+          },
+          {
+            "name": "ONOS Controller",
+            "ip": "10.50.50.2",
+            "connectPoint": "of:00000000000000a3/1",
+            "intfName": "ONOS Controller"
+          }
+        ]
+      }
+    },
+    "org.onosproject.router" : {
+      "bgp" : {
+        "bgpSpeakers" : [
+          {
+            "name" : "BGP Speaker",
+            "connectPoint" : "of:00000000000000a3/1",
+            "peers" : [
+              "10.200.200.2",
+              "10.201.201.2",
+              "10.50.50.2"
+            ]
+          }
+//          { //
+//           "connectPoint" : "of:00000000000000a3/1",
+//            "peers" : [ 
+//             "10.0.4.1" 
+//           ] 
+//          } 
+        ]
+      }
+    }
+  }
+}
