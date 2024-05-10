@@ -58,6 +58,124 @@
         ]
     }
     },
+    "devices" : {
+        "of:00015059c707e900" : {
+            "segmentrouting" : {
+                "name" : "M1",
+                "nodeSid" : 1019,
+                "routerIp" : "192.168.2.1",
+                "routerMac" : "50:DF:4A:07:9C:00",
+                "isEdgeRouter" : true,
+                "adjacencySids" : ["1019"]
+            }
+        },
+        "of:000150350807e700" : {
+            "segmentrouting" : {
+                "name" : "M2",
+                "nodeSid" : 1017,
+                "routerIp" : "192.168.2.2",
+                "routerMac" : "50:56:3D:07:9D:00",
+                "isEdgeRouter" : false,
+                "adjacencySids" : ["1017"]
+            }
+        },
+        "of:000150accd07e800" : {
+            "segmentrouting" : {
+                "name" : "M3",
+                "nodeSid" : 1016,
+                "routerIp" : "192.168.2.3",
+                "routerMac" : "50:02:97:07:9F:00",
+                "isEdgeRouter" : true,
+                "adjacencySids" : ["1016"]
+            }
+        },
+        "of:000150ed6a07ea00" : {
+            "segmentrouting" : {
+                "name" : "M4",
+                "nodeSid" : 1020,
+                "routerIp" : "192.168.2.4",
+                "routerMac" : "50:2E:1F:07:9E:00",
+                "isEdgeRouter" : false,
+                "adjacencySids" : ["1020"]
+            }
+        }
+    },
+    "hosts" : {
+        "50:DF:4A:07:9C:00/None" : {
+            "basic": {
+                "ips": ["12.12.12.1"],
+                "location": "of:00015059c707e900/3"
+            }
+        },
+        "50:DF:4A:07:9C:01/None" : {
+            "basic": {
+                "ips": ["14.14.14.1"],
+                "location": "of:00015059c707e900/4"
+            }
+        },
+        "50:56:3D:07:9D:00/None" : {
+            "basic": {
+                "ips": ["12.12.12.2"],
+                "location": "of:000150350807e700/3"
+            }
+        },
+        "50:56:3D:07:9D:01/None" : {
+            "basic": {
+                "ips": ["23.23.23.2"],
+                "location": "of:000150350807e700/4"
+            }
+        },
+        "50:02:97:07:9F:01/None" : {
+            "basic": {
+                "ips": ["23.23.23.3"],
+                "location": "of:000150accd07e800/4"
+            }
+        },
+        "50:02:97:07:9F:00/None" : {
+            "basic": {
+                "ips": ["34.34.34.3"],
+                "location": "of:000150accd07e800/3"
+            }
+        },
+        "50:2E:1F:07:9E:00/None" : {
+            "basic": {
+                "ips": ["34.34.34.4"],
+                "location": "of:000150ed6a07ea00/4"
+            }
+        },
+        "50:2E:1F:07:9E:01/None" : {
+            "basic": {
+                "ips": ["14.14.14.4"],
+                "location": "of:000150ed6a07ea00/3"
+            }
+        }
+    },
+    "links" : {
+        "of:000150350807e700/1-of:00015059c707e900/1" : {
+            "basic" : {}
+        },
+        "of:000150350807e700/2-of:000150accd07e800/2" : {
+            "basic" : {}
+        },
+        "of:00015059c707e900/1-of:000150350807e700/1" : {
+            "basic" : {}
+        },
+        "of:00015059c707e900/2-of:000150ed6a07ea00/2" : {
+            "basic" : {}
+        },
+        "of:000150accd07e800/1-of:000150ed6a07ea00/1" : {
+            "basic" : {}
+        },
+        "of:000150accd07e800/2-of:000150350807e700/2" : {
+            "basic" : {}
+        },
+        "of:000150ed6a07ea00/1-of:000150accd07e800/1" : {
+            "basic" : {}
+        },
+        "of:000150ed6a07ea00/2-of:00015059c707e900/2" : {
+            "basic" : {}
+        }
+    },
     "apps" : {
         "org.onosproject.core" : {
             "core" : {
