@@ -59,44 +59,44 @@
     }
     },
     "devices" : {
-        "of:00015059c707e900" : {
+         "of:00015059c707e900" : {
             "segmentrouting" : {
                 "name" : "M1",
-                "nodeSid" : 1019,
-                "routerIp" : "192.168.2.1",
-                "routerMac" : "50:DF:4A:07:9C:00",
+                "nodeSid" : 101,
+                "routerIp" : "1.1.1.1",
+                "routerMac" : "42:2A:82:DD:E7:D6",
                 "isEdgeRouter" : true,
-                "adjacencySids" : ["1019"]
+                "adjacencySids" : ["1024"]
             }
         },
         "of:000150350807e700" : {
             "segmentrouting" : {
                 "name" : "M2",
-                "nodeSid" : 1017,
-                "routerIp" : "192.168.2.2",
-                "routerMac" : "50:56:3D:07:9D:00",
+                "nodeSid" : 102,
+                "routerIp" : "2.2.2.2",
+                "routerMac" : "E6:BB:73:A5:33:E6",
                 "isEdgeRouter" : false,
-                "adjacencySids" : ["1017"]
+                "adjacencySids" : ["1021"]
             }
         },
         "of:000150accd07e800" : {
             "segmentrouting" : {
                 "name" : "M3",
-                "nodeSid" : 1016,
-                "routerIp" : "192.168.2.3",
-                "routerMac" : "50:02:97:07:9F:00",
+                "nodeSid" : 103,
+                "routerIp" : "3.3.3.3",
+                "routerMac" : "B6:CE:7E:F1:D7:B9",
                 "isEdgeRouter" : true,
-                "adjacencySids" : ["1016"]
+                "adjacencySids" : ["1034"]
             }
         },
         "of:000150ed6a07ea00" : {
             "segmentrouting" : {
                 "name" : "M4",
-                "nodeSid" : 1020,
-                "routerIp" : "192.168.2.4",
-                "routerMac" : "50:2E:1F:07:9E:00",
+                "nodeSid" : 104,
+                "routerIp" : "4.4.4.4",
+                "routerMac" : "4E:AC:06:89:5D:A6 ",
                 "isEdgeRouter" : false,
-                "adjacencySids" : ["1020"]
+                "adjacencySids" : ["1028"]
             }
         }
     },
