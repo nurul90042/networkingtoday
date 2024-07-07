@@ -125,12 +125,5 @@
         "of:000150f959063c00/3-of:0001503668061d00/3": {
             "basic": {}
         }
-    },
-    "apps" : {
-        "org.onosproject.core" : {
-            "core" : {
-                "linkDiscoveryMode" : "STRICT"
-            }    
-        }
     }
 }
