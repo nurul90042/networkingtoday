@@ -49,7 +49,7 @@
             "segmentrouting" : {
                 "name" : "M1",
                 "ipv4NodeSid" : 101,
-                "ipv4Loopback" : "1.1.1.1/32",
+                "ipv4Loopback" : "1.1.1.1",
                 "routerMac" : "50:FE:66:07:69:00",
                 "isEdgeRouter" : false,
                 "adjacencySids" : []
@@ -59,7 +59,7 @@
             "segmentrouting" : {
                 "name" : "M2",
                 "ipv4NodeSid" : 102,
-                "ipv4Loopback" : "2.2.2.2/32",
+                "ipv4Loopback" : "2.2.2.2",
                 "routerMac" : "50:44:63:07:6A:00",
                 "isEdgeRouter" : false,
                 "adjacencySids" : []
@@ -69,7 +69,7 @@
             "segmentrouting" : {
                 "name" : "M3",
                 "ipv4NodeSid" : 103,
-                "ipv4Loopback" : "3.3.3.3/32",
+                "ipv4Loopback" : "3.3.3.3",
                 "routerMac" : "50:BD:0F:07:6E:00",
                 "isEdgeRouter" : false,
                 "adjacencySids" : []
