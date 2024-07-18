@@ -70,7 +70,7 @@
                 "ipv4NodeSid" : 106,
                 "ipv4Loopback" : "192.168.100.115",
                 "routerMac" : "50:B5:07:06:C3:00",
-                "isEdgeRouter" : false,
+                "isEdgeRouter" : true,
                 "adjacencySids" : []
             }
         },
@@ -80,7 +80,7 @@
                 "ipv4NodeSid" : 107,
                 "ipv4Loopback" : "192.168.100.17",
                 "routerMac" : "50:FD:64:06:D1:00",
-                "isEdgeRouter" : false,
+                "isEdgeRouter" : true,
                 "adjacencySids" : []
             }
         }
