@@ -1,0 +1,146 @@
+{
+    "ports" : {
+        "of:000150fd6406d100/2" : {
+            "interfaces" : [
+                {
+                    "ips" : [ "192.168.20.2/24" ]
+                }
+            ]
+        },
+        "of:000150b50706c300/1" : {
+            "interfaces" : [
+                {
+                    "ips" : [ "192.168.10.2/24" ]
+                }
+            ]
+        },
+        "of:000150684a06c200/6" : {
+            "interfaces" : [
+                {
+                    "ips" : [ "172.16.10.1" ]
+                }
+            ]
+        },
+        "of:000150684a06c200/7" : {
+            "interfaces" : [
+                {
+                    "ips" : [ "192.168.10.1" ]
+                }
+            ]
+        },
+        "of:000150920806c400/3" : {
+            "interfaces" : [
+                {
+                    "ips" : [ "172.16.10.2" ]
+                }
+            ]
+        },
+        "of:000150920806c400/4" : {
+            "interfaces" : [
+                {
+                    "ips" : [ "192.168.20.1" ]
+                }
+            ]
+        }
+    },
+    "devices" : {
+        "of:000150684a06c200" : {
+            "segmentrouting" : {
+                "name" : "Device1",
+                "ipv4NodeSid" : 104,
+                "ipv4Loopback" : "192.168.100.14",
+                "routerMac" : "50:68:4A:06:C2:00",
+                "isEdgeRouter" : false,
+                "adjacencySids" : []
+            }
+        },
+        "of:000150920806c400" : {
+            "segmentrouting" : {
+                "name" : "Device2",
+                "ipv4NodeSid" : 105,
+                "ipv4Loopback" : "192.168.100.16",
+                "routerMac" : "50:92:31:06:C0:00",
+                "isEdgeRouter" : false,
+                "adjacencySids" : []
+            }
+        },
+        "of:000150b50706c300" : {
+            "segmentrouting" : {
+                "name" : "Device3",
+                "ipv4NodeSid" : 106,
+                "ipv4Loopback" : "192.168.100.115",
+                "routerMac" : "50:B5:07:06:C3:00",
+                "isEdgeRouter" : false,
+                "adjacencySids" : []
+            }
+        },
+        "of:000150fd6406d100" : {
+            "segmentrouting" : {
+                "name" : "Device4",
+                "ipv4NodeSid" : 107,
+                "ipv4Loopback" : "192.168.100.17",
+                "routerMac" : "50:FD:64:06:D1:00",
+                "isEdgeRouter" : false,
+                "adjacencySids" : []
+            }
+        }
+    },
+    "hosts" : {
+        "50:22:53:06:C1:00/None" : {
+            "basic": {
+                "ips": ["192.168.20.2"],
+                "locations": ["of:000150fd6406d100/2"]
+            }       
+        },
+        "50:71:82:06:BE:01/None" : {
+            "basic": {
+                "ips": ["192.168.10.2"],
+                "locations": ["of:000150b50706c300/1"]
+            }       
+        },
+        "50:82:EB:06:BF:00/None" : {
+            "basic": {
+                "ips": ["172.16.10.1"],
+                "locations": ["of:000150684a06c200/6"]
+            }       
+        },
+        "50:82:EB:06:BF:01/None" : {
+            "basic": {
+                "ips": ["192.168.10.1"],
+                "locations": ["of:000150684a06c200/7"]
+            }       
+        },
+        "50:92:31:06:C0:00/None" : {
+            "basic": {
+                "ips": ["172.16.10.2"],
+                "locations": ["of:000150920806c400/3"]
+            }       
+        },
+        "50:92:31:06:C0:01/None" : {
+            "basic": {
+                "ips": ["192.168.20.1"],
+                "locations": ["of:000150920806c400/4"]
+            }       
+        }
+    },
+    "links" : {
+        "of:000150684a06c200/4-of:000150920806c400/1": {
+            "basic": {}
+        },
+        "of:000150684a06c200/5-of:000150b50706c300/2": {
+            "basic": {}
+        },
+        "of:000150920806c400/1-of:000150684a06c200/4": {
+            "basic": {}
+        },
+        "of:000150920806c400/2-of:000150fd6406d100/1": {
+            "basic": {}
+        },
+        "of:000150b50706c300/2-of:000150684a06c200/5": {
+            "basic": {}
+        },
+        "of:000150fd6406d100/1-of:000150920806c400/2": {
+            "basic": {}
+        }
+    }
+}
